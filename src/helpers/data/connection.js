@@ -4,7 +4,7 @@ import apiKeys from '../apiKeys';
 
 const firebaseApp = () => {
   if (!firebase.apps.length) {
-    firebase.initializeApp(apiKeys.firebase.Config);
+    firebase.initializeApp(apiKeys.firebaseConfig);
   }
 };
 
