@@ -21,6 +21,7 @@
         ]
       }
     ],
-    "no-debugger": 1
+    "no-debugger": 1,
+    "class-methods-use-this": 0
   }
 }
