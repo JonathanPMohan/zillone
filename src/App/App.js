@@ -7,6 +7,8 @@ import connection from '../helpers/data/connection';
 import Listings from '../components/Listings/Listings';
 import MyNavbar from '../components/MyNavBar/MyNavbar';
 import authRequests from '../helpers/data/authRequests';
+import Building from '../components/Building/Building';
+import ListingForm from '../components/ListingForm/ListingForm';
 
 
 class App extends Component {
@@ -47,14 +49,22 @@ class App extends Component {
       return (
         <div className="App">
           <MyNavbar isAuthed={this.state.authed} logoutClickEvent={logoutClickEvent} />
-          <Auth isAuthenticated={this.isAuthenticated} />
+          <div className="row">
+            <Auth isAuthenticated={this.isAuthenticated} />
+          </div>
         </div>
       );
     }
     return (
       <div className="App">
         <MyNavbar isAuthed={this.state.authed} logoutClickEvent={logoutClickEvent} />
-        <Listings />
+        <div className="row">
+          <Listings />
+          <Building />
+        </div>
+        <div class="row">
+          <ListingForm />
+        </div>
       </div>
     );
   }
