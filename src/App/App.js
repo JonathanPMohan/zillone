@@ -45,7 +45,7 @@ class App extends Component {
     this.removeListener();
   }
 
-  isAuthenticated = () => {
+  isAuthenticated = (user) => {
     this.setState({ authed: true });
   }
 
