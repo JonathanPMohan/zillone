@@ -11,7 +11,6 @@ import {
 } from 'reactstrap';
 import './MyNavbar.scss';
 
-
 class MyNavbar extends React.Component {
   static propTypes = {
     isAuthed: PropTypes.bool,
@@ -20,9 +19,11 @@ class MyNavbar extends React.Component {
 
   state = {
     isOpen: false,
-  }
+  };
 
   render() {
+    // const monkeyButt = this.props.isAuthed;
+    // const newThing = this.props.newThing;
     const { isAuthed, logoutClickEvent } = this.props;
     return (
       <div className="my-navbar">
