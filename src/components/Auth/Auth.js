@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Auth.scss';
 import authRequests from '../../helpers/data/authRequests';
+import './Auth.scss';
 
 class Auth extends React.Component {
   static propTypes = {
@@ -18,7 +18,7 @@ class Auth extends React.Component {
   render() {
     return (
       <div className="Auth">
-        <button className="btn btn-danger" onClick={this.authenticateUser}>LOGIN</button>
+        <button className="btn btn-danger" onClick={this.authenticateUser}>Login</button>
       </div>
     );
   }
